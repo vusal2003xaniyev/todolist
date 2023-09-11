@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 50px;
+    background: rgb(21,85,102);
+    background: linear-gradient(90deg, rgba(21,85,102,1) 3%, rgba(35,17,103,1) 26%, rgba(36,4,59,1) 65%);
+}
+#main{
+    width: 60%;
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.main{
+    width: 400px;
+    height: 50px;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    padding-left: 20px;
+    background-color: white;
+}
+.list-main{
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    padding-left: 20px;
+    background-color: white;
+    
+}
+input{
+    width: 280px;
+    height: 40px;
+    border: none;
+    outline: none;
+    
+}
+.select-button{
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    background-color: black;
+    color: white;
+}
+.delete-button{
+    border: none;
+    width: 20px;
+    height: 40px;
+    background-color: white;
+}
+p{
+    padding-left: 10px;
+    text-align: justify;
+    margin-top: 10px;
+}
+#operation-list{
+    height: 500px;
+    overflow: auto;
+}
