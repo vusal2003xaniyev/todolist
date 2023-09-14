@@ -21,12 +21,16 @@ function viewList() {
 var func = viewList();
 var arr = func[0];
 var div = func[1];
+
+
 function listOperation() {
   let inp = document.querySelector("input");
   if (inp.value) {
     arr.push(inp.value);
     localStorage.setItem("list", JSON.stringify(arr));
-    div += `
+    var info=JSON.parse(localStorage.getItem('list'));
+    
+      div += `
     <div class="list-main" id="list">
     <button class="delete-button" id="btn.${
       arr.length - 1
@@ -38,6 +42,8 @@ function listOperation() {
     `;
 
     list.innerHTML = div;
+    viewList()
+   
   }
   inp.value = "";
 }
