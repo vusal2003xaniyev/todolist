@@ -65,3 +65,48 @@ p{
     height: 500px;
     overflow: auto;
 }
+@media screen and (max-width:480px){
+    .main{
+        width:300px;
+    }
+    input{
+        width:200px;
+    }
+    .list-main{
+        margin-left: 10px;
+    }
+
+}
+@media screen and (max-width:768px){
+    .main{
+        width: 300px;
+    }
+    input{
+        width: 200px;
+    }
+    .list-main{
+        margin-left: 10px;
+    }
+}
+@media screen and (max-width:320px){
+    .main{
+        width:200px;
+    }
+    input{
+        width: 150px;
+    }
+    .select-button{
+        font-size: 8px;
+    }
+}
+@media screen and (max-width:380px){
+    .main{
+        width:200px;
+    }
+    input{
+        width: 150px;
+    }
+    .select-button{
+        font-size: 8px;
+    }
+}
